@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       //true false
+       /*"привет мир"
+       1
+       */
+      let age = true;
+      let number = false;
+      let sum = age / number;
+      console.log("summa=" + sum)
+
+      //let _ = 0;
+
+      let hh = 5;
+      hh -= 5;
+      hh = hh - 5; 
+      console.log("вывод: " + hh);
+      hh = 5-hh;
+      console.log(hh);
+
+      let photoShop = true;
+      //camelcase - стиль наименования js 
+
+      tt1 = 10;
+      tt2 = parseInt("10");
+      console.log("tt1 = " + tt1 + "\n" + "tt2 = " + tt2);
+      console.log(tt1 + tt2);
+
+      string = "slovo";
+      console.log(string.length);
+      console.log("вывод " + string[1]);
+
+      let sh = "дом";
+      let nb = "банан";
+      console.log(sh[0] + nb[1]);
+      console.log((sh).slice(1));
+
+      let ink = 0;
+      console.log(ink--);
+
+      //++var - преинкремент, прибавление значения происх. при вызове переменной
+      //var++ - постинкремент, прибавления значение происх. при следующий итерации
+      //--var - декримент
+      //var-- - постдекримент
+
+      let pre = "dva slova";
+      console.log(pre.toUpperCase());
+
+      let no = false;
+      let yes = true;
+      console.log((no && yes)); //false
+
+      no = true;
+      yes = false;
+      console.log((no || yes)); //true
+
+      no = false;
+      yes = true;
+      console.log((!false && yes)); //! - не
+      
+      console.log((2 >= 2)); //не строгое значение включительно
+
+      let nn = 5;
+      let mm = "5";
+      console.log(nn == mm); //оператор не строгого сравнения
+      console.log(nn === mm); //оператор строгого сравнения, сравнивает величины и тип данных
+
+      console.log(0 == false);
+
+      console.log(false == "false"); //false
+      console.log(false == ""); //true
+      console.log("" == false); //true
+      console.log("" === false); //false (строковый === булевый)
+
+      console.log (null == "");
+
+      let too; 
+      console.log(too); //undefined
+
+      too = null;
+      console.log(too); //null - обозначает пустоту
+
+      //Массив это тип данных. В него можно присвоить строки, числа и др. типы данных.
+
+      let low = ["green", "black", 5];
+      console.log(low[1]);
+      low[0] = "red";
+      console.log(low);
+
+      low[3] = "game";
+      console.log(low);
+
+      let array1 = [3, ["work", 0, [9]]];
+      console.log(array1);
+
+      array1[1].push(2);
+      console.log(array1);
+      array1[1].pop(2);
+      console.log(array1);
+
+      let rr = true;
+      let ff = !false && true && (false || rr);
+      console.log(rr);
+
+      let wer = ["green", "black", 5];
+      let mywork = [3, 5];
+
+      let summ = wer.concat(mywork); //объединение массивов
+      console.log(summ);
+
+      //Нельзя объявить 2 массива с одинаковым названием в 1 области видимости
+      
+      wer.indexOf("black");
+      console.log(wer.indexOf("black")); //indexOf поиск индекса элемента в массиве
+
+      let zz = [99, "cat", true, null];
+      console.log(zz.join(" - ")); //join - преобразование массива в строку
+
+      Math.random();
+      console.log(Math.random());
+      console.log(Math.random());
+
+      let _test = console.log();
+      //_test(Math.floor(1,9)); не верно.
+      Math.floor(1,9);
+      console.log(Math.floor(1,9));
+
+      const _ = function(e){ //const - константа
+          console.log(e);
+      } 
+      
+      _("привет мир");
+
+      function anton(a, b) {
+          console.log(b);
+      }
+
+      anton("привет антон!", 5);
+
+     // let xx = [99, "cat", true, null];
+      //let randomIndex = Math.floor(Math.random() * 5);
+     // _("test= " + xx[randomIndex]); 
+
+      let car = { // {} - создание объекта, присвоено 3 пары "ключ-значения"
+          "bmw": 1500,
+          "name": "anton",
+          "color" : "red"
+      }
+
+      _(car);
+      
+
+      //car.bmw
+      //1500
+
+      //car.bmw = "mers"
+      //'mers'
+
+      //car
+      //{bmw: 'mers', name: 'anton', color: 'red'}
+
+      let _new = { //new - зарезервированнная переменная
+          1: 90,
+          "arr": ["t", 3]
+      };
+
+      _(_new);
+
+     //ДЗ - поработать с объектами и массивами, вполнить матем. действия с переменными (+-/*), 
+     //Написать скрипт рандомных слов. Сложение массивов и вычетание. Метод join. 
+     //Познакомится с консолью. Обращение к ключам через консоль.
+    
+     let ran = ["один", "два", "три"];
+     _(ran.join());
+     
+     let sss = ["cat", "dog", "fish"];
+     let randomIndex = Math.random();
+     _("вывод1: " + sss[randomIndex]);
+
+     let mike = [10, 15, 25];
+     let john = [5, 5, 5];
+     let www = mike.concat(john);
+      _(www);
+      //
+
+      let 
+
+
+
+    </script> 
+</body>
+</html>
