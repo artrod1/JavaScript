@@ -1,4 +1,3 @@
-<script>
 const _ = function(e){
     console.log(e);
 }
@@ -41,11 +40,21 @@ magic = random[Math.floor(Math.random() * 2)];
 let close = "вход запрещен";
 let open = "доступ разрешен"
 
-let age = 19;
-if(age < 18) {
-  alert(close + " " + magic);
+let age = " ";
+if(age != 18) {
+  _(close + " " + magic);
+} else if (age == 18) {
+    _(open + " " + magic);
 } else {
-    alert(open + " " + magic);
+    _("hi");
 }
 
-</script>
+const name = "anton";
+if(name.length >= 5) _("privet");
+
+let name1 = 5;
+//while - до тех пор, пока 
+while(name1 <= 5) {
+    _("щас будет кранты");
+    _(name1++); 
+} 
